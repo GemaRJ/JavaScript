@@ -1,5 +1,5 @@
 /*
-- Enunciado
+Gestor de Tareas:
     
     Crea una aplicación que permita al usuario añadir tareas a un array.
     Utiliza `prompt()` para solicitar las tareas y un bucle para permitir añadir múltiples tareas.
