@@ -38,32 +38,3 @@ let sumaFlecha = (parametro1, parametro2) => {
 };
 
 sumaFlecha(4, 6);
-
-/* 1º Interacción con el usuario:
-
-// alert(`Bienvenido ${nombre} a la página`);
-
-let edad = prompt("Por favor introduce tu edad"); //Devuelve un String siempre
-alert(`Tú edad es de ${edad}`); 
-
-let edad = parseInt(prompt("Por favor introduce tu edad")); //Si queremos que devuelva un número debemos de parsearlo. Si queremos que pase de letra a número Number(prompt) o de bool(Prompt)
-if (isNaN(edad)) {
-  alert("Dato incorrecto");
-} else {
-  alert(`Tú edad es de ${edad}`);
-}
-
-// 2º Interacción con el usuario
-
-let continuar = confirm("Estas seguro que quieres continuar?");
-if (continuar) {
-  let edad = Number(prompt("Por favor introduce tu edad")); //Si queremos que devuelva un número debemos de parsearlo. Si queremos que pase de letra a número Number(prompt) o de bool(Prompt)
-  if (isNaN(edad)) {
-    alert("Dato incorrecto");
-  } else {
-    alert(`Tú edad es de ${edad}`);
-  }
-} else {
-  alert("No quieres continuar");
-} booleano. 
-*/
