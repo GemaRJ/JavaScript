@@ -1,0 +1,11 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#resultado {
+  min-height: 120px;
+  font-size: 1.2rem;
+  white-space: pre-wrap; /* para que respete saltos de línea */
+  text-align: left;
+}
