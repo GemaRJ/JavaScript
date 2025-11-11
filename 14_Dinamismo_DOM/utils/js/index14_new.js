@@ -4,13 +4,15 @@
 - Class: .class -> generalista
 - Id: #id -> único
 
-Diferentes métodos para buscar:
+Diferentes métodos para buscar: Antigua manera pero válida también:
 - getElementById        -> document.getElementById("id_Buscar");
 - getElementsByClassName -> document.getElementsByClassName("clase_buscar");
 - getElementsByTagName   -> document.getElementsByTagName("tag_buscar");
 
  Devuelve el elemento único si es getElementById
  Devuelve elementos múltiples si es getElements -> HTMLCollection
+
+ Modernas maneras de buscar:
 
 - document.querySelector("tag")
 - document.querySelector("#id")
