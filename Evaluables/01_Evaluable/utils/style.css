@@ -6,6 +6,6 @@ body {
 #resultado {
   min-height: 120px;
   font-size: 1.2rem;
-  white-space: pre-wrap; /* para que respete saltos de línea */
+  white-space: pre-wrap;
   text-align: left;
 }
