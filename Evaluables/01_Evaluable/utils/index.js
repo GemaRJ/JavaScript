@@ -1,5 +1,7 @@
-// 1. Definimos los palos y valores que tendrá la baraja (constantes)
-const palos = ["C", "R", "T", "P"]; // C=Corazones, R=Rombos, T=Tréboles, P=Picas
+// ------------------------------
+//        BARAJA DE CARTAS
+// ------------------------------
+const palos = ["C", "D", "T", "P"];
 const valores = [
   "1",
   "2",
@@ -14,115 +16,171 @@ const valores = [
   "J",
   "Q",
   "K",
-]; // Valores de las cartas
+];
 
-// 2.  Declaramos la variable baraja que contendrá todas las cartas
 let baraja = [];
 
-// 3️. Función para crear la baraja completa combinando todos los valores con cada palo
 function crearBaraja() {
-  baraja = []; // Reiniciamos baraja vacía
+  baraja = [];
   for (const palo of palos) {
-    // Por cada palo
     for (const valor of valores) {
-      // Por cada valor
-      baraja.push(valor + palo); // Añadimos la carta (ejemplo: "10C")
+      baraja.push(valor + palo);
     }
   }
 }
 
-// 4️. Función para mezclar la baraja usando el algoritmo Fisher-Yates
 function mezclarBaraja() {
   for (let i = baraja.length - 1; i > 0; i--) {
-    // Elegimos índice aleatorio entre 0 e i
     const j = Math.floor(Math.random() * (i + 1));
-    // Intercambiamos carta en i con carta en j
     [baraja[i], baraja[j]] = [baraja[j], baraja[i]];
   }
 }
 
-// 5. Función para sacar (extraer) una carta de la baraja, sacamos la última carta
 function sacarCarta() {
   return baraja.pop();
 }
 
-// 6️. Función que devuelve un array con todas las cartas que pertenecen a un palo dado
-function cartasDePalo(palo) {
-  return baraja.filter((carta) => carta.endsWith(palo));
-}
-
-// 7️. Función para obtener el valor numérico de una carta usando substring para separar valor y palo
+// Valor según enunciado
 function valorCarta(carta) {
-  const valor = carta.substring(0, carta.length - 1); // Extraemos valor sin la última letra (palo)
-  if (valor === "J") return 11; // Jota vale 11
-  if (valor === "Q") return 12; // Reina vale 12
-  if (valor === "K") return 13; // Rey vale 13
-  return parseInt(valor); // Los números del 1 al 10 los convertimos a entero
+  const v = carta.slice(0, -1);
+
+  if (v === "A" || v === "1") return 1;
+  if (["J", "Q", "K"].includes(v)) return 11;
+
+  return parseInt(v);
 }
 
-// 8️. Esperamos a que el DOM esté completamente cargado para acceder a elementos HTML y añadir eventos
+// OBJETOS DEL JUEGO
+
+const jugador = {
+  nombre: "",
+  mano: [],
+  puntos: 0,
+  pedir(carta) {
+    this.mano.push(carta);
+    this.puntos += valorCarta(carta);
+  },
+};
+
+const banca = {
+  mano: [],
+  puntos: 0,
+  pedir(carta) {
+    this.mano.push(carta);
+    this.puntos += valorCarta(carta);
+  },
+};
+
+//  VARIABLES GLOBALES
+
+let resultadoDiv;
+let btnPedir, btnPlantarse;
+
+//  INICIO DEL JUEGO
+
 document.addEventListener("DOMContentLoaded", () => {
+  jugador.nombre = prompt("Introduce tu nombre:");
+  if (!jugador.nombre) jugador.nombre = "Jugador";
 
-// 9️. Obtenemos referencias a los elementos del DOM que vamos a usar (resultado y botones)
-  const resultado = document.getElementById("resultado");
-  const btnMezclar = document.getElementById("btnMezclar");
-  const btnSacar = document.getElementById("btnSacar");
-  const btnCartasPalo = document.getElementById("btnCartasPalo");
-  const btnValorCartaEjemplo = document.getElementById("btnValorCartaEjemplo");
+  resultadoDiv = document.getElementById("resultado");
+  btnPedir = document.getElementById("btnPedir");
+  btnPlantarse = document.getElementById("btnPlantarse");
 
-  //  10. Creamos la baraja al cargar la página para tenerla lista
-  crearBaraja();
-
-  // 1️1. Evento click para el botón "Mezclar baraja"
-  btnMezclar.addEventListener("click", () => {
-    crearBaraja(); // Reiniciamos baraja
-    mezclarBaraja(); // La mezclamos
-    resultado.textContent = `Baraja mezclada. Cartas disponibles: ${baraja.length}`;
-  });
-
-  // 1️2. Evento click para el botón "Sacar una carta"
-  btnSacar.addEventListener("click", () => {
-    if (baraja.length === 0) {
-      resultado.textContent = "No quedan cartas en la baraja.";
-      return;
-    }
-    const carta = sacarCarta(); // Sacamos la carta
-    const valor = valorCarta(carta); // Obtenemos su valor numérico
-    resultado.textContent = `Sacaste la carta: ${carta} (valor numérico: ${valor}). Cartas restantes: ${baraja.length}`;
-  });
-
-  // 1️3. Evento click para el botón "Mostrar cartas de un palo"
-  btnCartasPalo.addEventListener("click", () => {
-    // Usamos SweetAlert para pedir al usuario el palo
-    Swal.fire({
-      title: "Introduce el palo",
-      input: "text",
-      inputLabel: "Palos: C=Corazones, R=Rombos, T=Tréboles, P=Picas",
-      inputValidator: (value) => {
-        if (!value || !palos.includes(value.toUpperCase())) {
-          return "Por favor introduce uno de los palos válidos: C, R, T, P";
-        }
-      },
-      showCancelButton: true,
-    }).then((result) => {
-      if (result.isConfirmed) {
-        const palo = result.value.toUpperCase();
-        const cartas = cartasDePalo(palo); // Obtenemos cartas del palo elegido
-        if (cartas.length === 0) {
-          resultado.textContent = `No quedan cartas del palo ${palo} en la baraja.`;
-        } else {
-          resultado.textContent = `Cartas del palo ${palo} (${
-            cartas.length
-          }):\n${cartas.join(", ")}`;
-        }
-      }
-    });
-  });
-
-  // 1️5. Evento click para el botón "Valor de carta ejemplo"
-  btnValorCartaEjemplo.addEventListener("click", () => {
-    const cartaEjemplo = "10C";
-    const valor = valorCarta(cartaEjemplo);
-    resultado.textContent = `El valor numérico de la carta ${cartaEjemplo} es: ${valor}`;
-  });
+  reiniciarJuego();
 });
+
+function reiniciarJuego() {
+  crearBaraja();
+  mezclarBaraja();
+
+  jugador.mano = [];
+  jugador.puntos = 0;
+
+  banca.mano = [];
+  banca.puntos = 0;
+
+  escribir(`👋 Bienvenido ${jugador.nombre}.\nLa banca empieza a jugar...`);
+
+  turnoBanca();
+}
+
+//   TURNO BANCA
+
+function turnoBanca() {
+  const intervalo = setInterval(() => {
+    if (banca.puntos < 17) {
+      const carta = sacarCarta();
+      banca.pedir(carta);
+
+      escribir(`Banca saca: ${carta}\nPuntos banca: ${banca.puntos}`);
+
+      if (banca.puntos >= 22) {
+        clearInterval(intervalo);
+        terminar("La banca se pasa de 21. ¡GANAS!");
+      }
+    } else {
+      clearInterval(intervalo);
+      escribir("\n--- Turno del jugador ---");
+      activarBotones();
+    }
+  }, 1000);
+}
+
+// ------------------------------
+//       ACCIONES DEL JUGADOR
+// ------------------------------
+function activarBotones() {
+  btnPedir.disabled = false;
+  btnPlantarse.disabled = false;
+
+  btnPedir.onclick = pedirJugador;
+  btnPlantarse.onclick = plantarse;
+}
+
+function pedirJugador() {
+  const carta = sacarCarta();
+  jugador.pedir(carta);
+
+  escribir(`\n${jugador.nombre} saca: ${carta}\nPuntos: ${jugador.puntos}`);
+
+  if (jugador.puntos >= 22) {
+    terminar("Te has pasado de 21. Pierdes.");
+  }
+}
+
+function plantarse() {
+  escribir(`\n${jugador.nombre} se planta con ${jugador.puntos} puntos.`);
+  decidirGanador();
+}
+
+// ------------------------------
+//       DECISIÓN DEL JUEGO
+// ------------------------------
+function decidirGanador() {
+  if (jugador.puntos === 21 && banca.puntos === 21) {
+    terminar("Empate a 21.");
+    return;
+  }
+
+  if (jugador.puntos > banca.puntos) {
+    terminar("¡GANAS! Estás más cerca del 21.");
+  } else if (banca.puntos > jugador.puntos) {
+    terminar("Pierdes. La banca está más cerca del 21.");
+  } else {
+    terminar("Empate.");
+  }
+}
+
+function terminar(mensaje) {
+  btnPedir.disabled = true;
+  btnPlantarse.disabled = true;
+
+  escribir("\n" + mensaje);
+}
+
+// ------------------------------
+//        FUNCIÓN DE SALIDA
+// ------------------------------
+function escribir(texto) {
+  resultadoDiv.textContent += texto + "\n";
+}
