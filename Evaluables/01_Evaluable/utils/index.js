@@ -1,7 +1,7 @@
 // BARAJA DE CARTAS
 const palos = ["C", "D", "T", "P"];
 const valores = [
-  "1",
+  "A",
   "2",
   "3",
   "4",
@@ -48,7 +48,6 @@ function valorCarta(carta) {
 }
 
 // OBJETOS DEL JUEGO
-
 const jugador = {
   nombre: "",
   mano: [],
@@ -69,12 +68,10 @@ const banca = {
 };
 
 //  VARIABLES GLOBALES
-
 let DivResultado;
 let btnPedir, btnPlantarse;
 
 //  DOM
-
 document.addEventListener("DOMContentLoaded", () => {
   jugador.nombre = prompt("Introduce tu nombre:");
   if (!jugador.nombre) jugador.nombre = "Jugador";
@@ -92,26 +89,23 @@ function reiniciarJuego() {
 
   jugador.mano = [];
   jugador.puntos = 0;
-
   banca.mano = [];
   banca.puntos = 0;
 
-  escribir(
-    `Comenzamos el Juego del BlackJack: ${jugador.nombre}.\n¡ La banca empieza a jugar !`
-  );
+  DivResultado.innerHTML = "";
 
+  escribir(`Bienvenido/a: ${jugador.nombre}.\n¡ La banca empieza a jugar !`);
   turnoBanca();
 }
 
 // TURNO BANCA
-
 function turnoBanca() {
   const intervalo = setInterval(() => {
     if (banca.puntos < 17) {
       const carta = sacarCarta();
       banca.pedir(carta);
 
-      escribir(`Carta: ${carta}\nPuntos: ${banca.puntos}`);
+      escribir(`[BANCA] Carta: ${carta} | Puntos: ${banca.puntos}`, carta);
 
       if (banca.puntos >= 22) {
         clearInterval(intervalo);
@@ -119,14 +113,14 @@ function turnoBanca() {
       }
     } else {
       clearInterval(intervalo);
-      escribir(`\n¡ ${jugador.nombre} es tu Turno !`);
+
+      escribir(`¡ ${jugador.nombre} es tu Turno !`);
       activarBotones();
     }
   }, 1000);
 }
 
 // JUGADOR (PEDIR CARTA O PLANTARSE)
-
 function activarBotones() {
   btnPedir.disabled = false;
   btnPlantarse.disabled = false;
@@ -139,7 +133,7 @@ function pedirJugador() {
   const carta = sacarCarta();
   jugador.pedir(carta);
 
-  escribir(`\nCarta: ${carta}\nPuntos: ${jugador.puntos}`);
+  escribir(`[TÚ] Carta: ${carta} | Puntos: ${jugador.puntos}`, carta);
 
   if (jugador.puntos >= 22) {
     terminar("Te has pasado de 21. Pierdes.");
@@ -147,7 +141,7 @@ function pedirJugador() {
 }
 
 function plantarse() {
-  escribir(`\n${jugador.nombre} se planta con ${jugador.puntos} puntos.`);
+  escribir(`${jugador.nombre} se planta con ${jugador.puntos} puntos.`);
   decidirGanador();
 }
 
@@ -167,14 +161,26 @@ function decidirGanador() {
   }
 }
 
+// TERMINAR JUEGO
 function terminar(mensaje) {
   btnPedir.disabled = true;
   btnPlantarse.disabled = true;
 
-  escribir("\n" + mensaje);
+  DivResultado.innerHTML += `<div class="alert alert-info fw-bold mt-3 text-center">${mensaje}</div>`;
+  DivResultado.scrollTop = DivResultado.scrollHeight;
 }
 
 // SALIDA POR PANTALLA
-function escribir(texto) {
-  DivResultado.textContent += texto + "\n";
+
+function escribir(texto, carta = null) {
+  let html = `<div class="log-entry"><span>${texto}</span>`;
+
+  if (carta) {
+    html += `<img src="./utils/cartas/${carta}.jpg" class="carta-img" alt="${carta}">`;
+  }
+
+  html += `</div>`;
+
+  DivResultado.innerHTML += html;
+  DivResultado.scrollTop = DivResultado.scrollHeight;
 }

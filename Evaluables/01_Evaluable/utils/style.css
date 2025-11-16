@@ -1,11 +1,42 @@
 body {
   background-color: #f8f9fa;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
 }
 
 #resultado {
-  min-height: 120px;
-  font-size: 1.2rem;
-  white-space: pre-wrap;
-  text-align: left;
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+}
+
+.log-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.carta-img {
+  width: 70px;
+  margin: 3px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.botones button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
 }
