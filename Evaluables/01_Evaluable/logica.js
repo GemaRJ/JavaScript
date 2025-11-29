@@ -21,7 +21,7 @@ function mostrarCartas(mano) {
   return resultado;
 }
 
-// Actualizar tablero
+// Tablero
 function actualizarTablero() {
   divResultado.innerHTML = `
     <div class="text-center mb-4">
