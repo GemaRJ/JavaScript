@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gr\\.vscode\\Desarrollo web en Entorno Cliente_Borja\\05_Usuarios_JavaScript\\05_Usuarios_JavaScript\\05_Usuarios_JavaScript.csproj",
+      "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\13_Usuarios\\05_Usuarios_JavaScript.csproj",
       "projectName": "05_Usuarios_JavaScript",
-      "projectPath": "C:\\Users\\gr\\.vscode\\Desarrollo web en Entorno Cliente_Borja\\05_Usuarios_JavaScript\\05_Usuarios_JavaScript\\05_Usuarios_JavaScript.csproj",
+      "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\13_Usuarios\\05_Usuarios_JavaScript.csproj",
       "packagesPath": "C:\\Users\\gr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gr\\.vscode\\Desarrollo web en Entorno Cliente_Borja\\05_Usuarios_JavaScript\\05_Usuarios_JavaScript\\obj\\",
+      "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\13_Usuarios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gr\\AppData\\Roaming\\NuGet\\NuGet.Config"
