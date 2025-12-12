@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("05_Usuarios_JavaScript")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("15_Promesas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3285d2780d3ed5924dbb03ca6ebd86c3ed9c8df2")]
-[assembly: System.Reflection.AssemblyProductAttribute("05_Usuarios_JavaScript")]
-[assembly: System.Reflection.AssemblyTitleAttribute("05_Usuarios_JavaScript")]
+[assembly: System.Reflection.AssemblyProductAttribute("15_Promesas")]
+[assembly: System.Reflection.AssemblyTitleAttribute("15_Promesas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
