@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\15_LocalStorage\\15_Promesas.csproj",
-      "projectName": "15_Promesas",
-      "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\15_LocalStorage\\15_Promesas.csproj",
+      "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\16_LocalStorage\\15_LocalStorage.csproj",
+      "projectName": "15_LocalStorage",
+      "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\16_LocalStorage\\15_LocalStorage.csproj",
       "packagesPath": "C:\\Users\\gr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\15_LocalStorage\\obj\\",
+      "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\16_LocalStorage\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gr\\AppData\\Roaming\\NuGet\\NuGet.Config"
