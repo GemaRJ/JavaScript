@@ -1,24 +1,22 @@
+/* Imagen de las cards */
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
 
-      /* Imagenes con altura fija y recorte proporcional */
-      .card-img-top {
-        height: 150px;
-        object-fit: cover;
-      }
+/* Todas las cards misma altura */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-      /* Todas las cards con la misma altura */
-      .card {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
+.card-body {
+  flex: 1;
+}
 
-      /* Card-body se expande para ocupar todo el espacio disponible */
-      .card-body {
-        flex: 1;
-      }
-
-      /* Columna registro con scroll si hay mucho contenido */
-      .col-4 {
-        max-height: 80vh;
-        overflow-y: auto;
-      }
+/* SOLO la columna registro tiene scroll */
+#colRegistro {
+  max-height: 80vh;
+  overflow-y: auto;
+}
