@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("05_Usuarios_JavaScript")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8b9ffcc5b76e5e852eb5fe3bbc5ab66cc4e9ac1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66cfcb767452b3b97915028788ad5f856a650355")]
 [assembly: System.Reflection.AssemblyProductAttribute("05_Usuarios_JavaScript")]
 [assembly: System.Reflection.AssemblyTitleAttribute("05_Usuarios_JavaScript")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
