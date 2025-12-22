@@ -1,71 +1,90 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Definimos la clase producto si no existe
-  class Producto {
-    constructor(nombre, precio, categoria) {
+  // Clase Producto
+  let Producto = class {
+    constructor(nombre, precio, categoria, imagen) {
       this.nombre = nombre;
       this.precio = precio;
       this.categoria = categoria;
+      this.imagen = imagen;
     }
-  }
+  };
 
+  // Array inicial de productos
   let productos = [
-    new Producto("Camiseta", 100, "ropa"),
-    new Producto("Pantalón", 200, "ropa"),
-    new Producto("Móvil", 100, "tecnología"),
-    new Producto("Tablet", 100, "tecnología"),
-    new Producto("Bebida", 100, "alimentos"),
-    new Producto("Comida", 100, "alimentos"),
+    new Producto("Camiseta", 100, "ropa", "./utils/img/ropa/camiseta.png"),
+    new Producto("Pantalón", 200, "ropa", "./utils/img/ropa/pantalon.png"),
+    new Producto(
+      "Móvil",
+      300,
+      "tecnologia",
+      "./utils/img/tecnologia/movil.png"
+    ),
+    new Producto(
+      "Tablet",
+      400,
+      "tecnologia",
+      "./utils/img/tecnologia/tablet.png"
+    ),
+    new Producto("Bebida", 10, "alimentos", "./utils/img/alimentos/bebida.png"),
+    new Producto("Comida", 20, "alimentos", "./utils/img/alimentos/comida.png"),
   ];
 
-  let select = document.querySelector("#select-tipo");
-  let divProductos = document.querySelector("#div-productos");
+  // DOM
+  let divResultados = document.querySelector("#resultados");
+  let selectCategoria = document.querySelector("#select-categoria");
 
-  // Función para mostrar los productos
-  function representarProductos(lista) {
-    divProductos.innerHTML = ""; // limpiar div antes de mostrar
-    lista.forEach((item) => {
-      let imagen = "";
-      switch (item.categoria) {
-        case "ropa":
-          imagen =
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3R40s20PTRbJ1LPQUeLu5BUE6h6bvQi7TTg&s";
-          break;
-        case "alimentos":
-          imagen =
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAlmh5S75ab5kdj2GmHUmMTOXZ5vMYXXi3ww&s";
-          break;
-        case "tecnología":
-          imagen =
-            "https://neosystems.es/wp-content/uploads/2021/03/foto-tecno.jpeg";
-          break;
-        default:
-          imagen =
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHmuxgLNTRF42x-Sj0nu8msU6-DQ-Gbceh0A&s";
-      }
-
-      divProductos.innerHTML += `
-        <div class="producto">
-          <h3>${item.nombre}</h3>
-          <p>Precio: ${item.precio} €</p>
-          <p>Categoría: ${item.categoria}</p>
-          <img src="${imagen}" alt="${item.categoria}" width="100">
+  // Función para representar productos
+  let representarProductos = (lista) => {
+    divResultados.innerHTML = "";
+    lista.forEach((item, index) => {
+      divResultados.innerHTML += `
+        <div class="col animate__animated animate__fadeInDown">
+          <div class="card h-100">
+            <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
+            <div class="card-body">
+              <h5 class="card-title">${item.nombre}</h5>
+              <p class="card-text">Precio: ${item.precio} €</p>
+              <p class="card-text">Categoría: ${item.categoria}</p>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-danger btn-sm btnEliminar" data-index="${index}">Eliminar</button>
+            </div>
+          </div>
         </div>
       `;
     });
-  }
+  };
 
-  // Inicializar mostrando todos los productos
+  // Mostrar productos iniciales
   representarProductos(productos);
 
-  // Filtrar productos al cambiar el select
-  select.addEventListener("change", () => {
-    let tipo = select.value; // ropa, alimentos, tecnología o todos
+  // Filtrar productos por categoría
+  selectCategoria.addEventListener("change", () => {
+    let tipo = selectCategoria.value;
     let listaFiltrada =
-      tipo !== "todos"
-        ? productos.filter((item) => item.categoria === tipo)
+      tipo !== "todos" && tipo !== ""
+        ? productos.filter((p) => p.categoria === tipo)
         : productos;
-
     representarProductos(listaFiltrada);
-    console.log("El resultado del filtro es:", listaFiltrada);
+  });
+
+  // Eliminar producto
+  divResultados.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btnEliminar")) {
+      let index = e.target.getAttribute("data-index");
+      Swal.fire({
+        title: "¿Eliminar producto?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Sí",
+        cancelButtonText: "No",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          productos.splice(index, 1);
+          representarProductos(productos);
+          Swal.fire("Eliminado", "Producto eliminado correctamente", "success");
+        }
+      });
+    }
   });
 });

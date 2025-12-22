@@ -63,7 +63,7 @@ divResultados.addEventListener("click", (e) => {
   if (e.target.classList.contains("btnEliminar")) {
     Swal.fire({
       title: "¿Eliminar usuario?",
-      text: "Esta acción no se puede deshacer",
+      text: "Estas seguro que deseas eliminar este usuario.",
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Sí, eliminar",

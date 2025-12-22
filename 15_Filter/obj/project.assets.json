@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Desarrollo web Cliente-Borja\\VisualCode\\06_Filter\\06_DudasFilter_JavaScript\\06_DudasFilter_JavaScript.csproj",
-      "projectName": "06_DudasFilter_JavaScript",
-      "projectPath": "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Desarrollo web Cliente-Borja\\VisualCode\\06_Filter\\06_DudasFilter_JavaScript\\06_DudasFilter_JavaScript.csproj",
+      "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\15_Filter\\15_Filter.csproj",
+      "projectName": "15_Filter",
+      "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\15_Filter\\15_Filter.csproj",
       "packagesPath": "C:\\Users\\gr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Desarrollo web Cliente-Borja\\VisualCode\\06_Filter\\06_DudasFilter_JavaScript\\obj\\",
+      "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\15_Filter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gr\\AppData\\Roaming\\NuGet\\NuGet.Config"
