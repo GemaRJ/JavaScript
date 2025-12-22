@@ -1,6 +1,5 @@
-// =======================
-// 1️⃣ SELECCIÓN DEL DOM
-// =======================
+//  SELECCIÓN DEL DOM
+
 let inputNombre = document.querySelector("#nombreInput");
 let inputMail = document.querySelector("#emailInput");
 let inputPass = document.querySelector("#passInput");
