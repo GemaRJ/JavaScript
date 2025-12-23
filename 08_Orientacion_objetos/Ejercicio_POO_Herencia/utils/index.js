@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   selectTipo.addEventListener("change", () => {
     if (selectTipo.value === "estudiante") {
       inputExtra.style.display = "block";
-      inputExtra.placeholder = "Introduce el curso del estudiante";
+      inputExtra.placeholder = "CURSO";
     } else if (selectTipo.value === "empleado") {
       inputExtra.style.display = "block";
-      inputExtra.placeholder = "Introduce el departamento del empleado";
+      inputExtra.placeholder = "CATEGORÍA";
     } else {
       inputExtra.style.display = "none";
       inputExtra.value = "";
