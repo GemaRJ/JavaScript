@@ -1,6 +1,4 @@
-// ==============================
 // OPERADORES LÓGICOS EN JAVASCRIPT
-// ==============================
 
 // Los operadores lógicos sirven para combinar o negar condiciones.
 // Su resultado siempre será un valor booleano: true (verdadero) o false (falso).
@@ -9,17 +7,13 @@
 // || (OR): Devuelve true si AL MENOS una condición es verdadera.
 // !  (NOT): Invierte el valor lógico (true → false, false → true).
 
-// ==============================
 // EJEMPLO BASE
-// ==============================
 
 // Definimos dos variables de ejemplo
 let edad = 25;
 let tieneCarnet = true;
 
-// ==============================
 // AND (&&)
-// ==============================
 
 console.log("=== Operador AND (&&) ===");
 
@@ -30,10 +24,7 @@ console.log(edad >= 18 && tieneCarnet); // true
 // En este caso, la segunda condición es false, así que el resultado total será false
 console.log(edad >= 18 && false); // false
 
-
-// ==============================
 // OR (||)
-// ==============================
 
 console.log("\n=== Operador OR (||) ===");
 
@@ -44,10 +35,7 @@ console.log(edad >= 18 || tieneCarnet); // true
 // En este caso, ambas condiciones son falsas → resultado false
 console.log(false || false); // false
 
-
-// ==============================
 // NOT (!)
-// ==============================
 
 console.log("\n=== Operador NOT (!) ===");
 
@@ -56,10 +44,7 @@ console.log("\n=== Operador NOT (!) ===");
 let esMenor = !(edad >= 18);
 console.log(esMenor); // false
 
-
-// ==============================
 // COMBINACIÓN DE OPERADORES
-// ==============================
 
 console.log("\n=== Combinación de operadores ===");
 
@@ -74,10 +59,7 @@ let puedeConducir = (edad >= 18 && tieneCarnet) || tienePermisoPadres;
 
 console.log("¿Puede conducir?", puedeConducir); // true
 
-
-// ==============================
 // EJEMPLO PRÁCTICO
-// ==============================
 
 console.log("\n=== Ejemplo práctico ===");
 
@@ -87,7 +69,7 @@ let asistencia = 85; // porcentaje
 
 // Para aprobar, el alumno necesita tener nota >= 5 Y asistencia >= 80
 // Si ambas condiciones se cumplen → true
-let aprobado = (nota >= 5) && (asistencia >= 80);
+let aprobado = nota >= 5 && asistencia >= 80;
 
 // Usamos un if para mostrar el resultado
 if (aprobado) {
@@ -96,10 +78,7 @@ if (aprobado) {
   console.log("Alumno SUSPENDIDO ");
 }
 
-
-// ==============================
 // OTRO EJEMPLO CON OR (||)
-// ==============================
 
 console.log("\n=== Ejemplo con OR ===");
 
@@ -114,10 +93,7 @@ if (tieneEntrada || esInvitado) {
   console.log("No puede acceder ");
 }
 
-
-// ==============================
 // EJEMPLO CON NOT (!)
-// ==============================
 
 console.log("\n=== Ejemplo con NOT ===");
 

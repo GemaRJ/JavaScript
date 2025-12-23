@@ -1,6 +1,6 @@
-/* ===========================================================
+/* 
    ARRAYS EN JAVASCRIPT — CON EJEMPLOS Y EXPLICACIONES
-=========================================================== */
+*/
 
 //  Crear arrays de distintos tipos
 let numeros = [1, 2, 3, 4, 5];
@@ -29,9 +29,9 @@ for (let i = 0; i < numeros.length; i++) {
 //  Recorrer con forEach (más moderno)
 palabras.forEach((p, i) => console.log(`Palabra ${i}: ${p}`));
 
-/* ===========================================================
+/* 
    MÉTODOS BÁSICOS DE MANIPULACIÓN DE ARRAYS
-=========================================================== */
+ */
 
 let nombres = ["Borja", "Luis", "Jesús"];
 
@@ -64,9 +64,9 @@ let arrayEliminar = [1, 2, 3, 4, 5];
 arrayEliminar.splice(2, 2); // Desde el índice 2 elimina 2 elementos
 console.log("Array tras splice:", arrayEliminar);
 
-/* ===========================================================
+/* 
    MÉTODOS DE BÚSQUEDA Y FILTRADO EN ARRAYS
-=========================================================== */
+*/
 
 let frutas = ["manzana", "banana", "naranja", "pera", "uva", "mango"];
 
@@ -123,9 +123,9 @@ if (frutas.includes(buscar)) {
   }
 }
 
-/* ===========================================================
+/* 
    MÉTODOS Y FUNCIONES DE BÚSQUEDA / VALIDACIÓN — RESUMEN
-===========================================================
+
 
  isNaN()
 ➡ Comprueba si un valor NO es un número.

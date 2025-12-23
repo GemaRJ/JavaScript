@@ -1,6 +1,4 @@
-// ==============================
 // FUNCIONES EN JAVASCRIPT
-// ==============================
 
 // 1. Función tradicional
 function saludar(nombre) {
@@ -64,9 +62,7 @@ function factorial(n) {
 }
 console.log("Factorial de 5:", factorial(5));
 
-// ==============================
 // FUNCIONES ASÍNCRONAS
-// ==============================
 
 // Función asíncrona con async/await
 async function obtenerDatos() {
@@ -108,9 +104,9 @@ async function obtenerDatosConError() {
 }
 obtenerDatosConError();
 
-/* ===========================================================
+/* 
    MÉTODOS Y FUNCIONES DE BÚSQUEDA / VALIDACIÓN — RESUMEN
-===========================================================
+
 
  isNaN()
 ➡ Comprueba si un valor NO es un número.

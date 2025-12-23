@@ -1,6 +1,4 @@
-// ==============================
 // FECHAS Y CADENAS EN JAVASCRIPT
-// ==============================
 
 // ======== FECHAS ========
 
@@ -52,7 +50,7 @@ let textoCompleto = texto.concat(texto2, "!");
 console.log(textoCompleto);
 
 // Buscar posición de un carácter
-console.log("Posición de 'M':", texto.indexOf('M'));
+console.log("Posición de 'M':", texto.indexOf("M"));
 
 // Eliminar espacios al inicio y final
 let textoConEspacios = "    Hola mundo    ";

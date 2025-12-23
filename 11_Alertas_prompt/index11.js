@@ -1,6 +1,4 @@
-// ==============================
 // ALERTAS, CONFIRMACIONES Y PROMPT
-// ==============================
 
 // Alerta simple
 alert("El proceso se ha terminado");

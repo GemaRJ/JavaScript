@@ -1,6 +1,4 @@
-// ==============================
 // OPERADORES DE INCREMENTO Y DECREMENTO
-// ==============================
 
 // Estos operadores permiten aumentar o disminuir el valor de una variable en 1.
 // Son muy usados en bucles y contadores.
@@ -9,10 +7,7 @@
 let numero = 5;
 console.log("Valor inicial:", numero);
 
-// ==============================
-// INCREMENTO (++)
-// ==============================
-// Aumenta la variable en 1
+// INCREMENTO (++): Aumenta la variable en 1
 
 numero++; // Equivale a: numero = numero + 1;
 console.log("Después de numero++:", numero); // 6
@@ -20,10 +15,7 @@ console.log("Después de numero++:", numero); // 6
 ++numero; // Pre-incremento: también suma 1 antes de usar el valor
 console.log("Después de ++numero:", numero); // 7
 
-// ==============================
-// DECREMENTO (--)
-// ==============================
-// Disminuye la variable en 1
+// DECREMENTO (--) : Disminuye la variable en 1
 
 numero--; // Equivale a: numero = numero - 1;
 console.log("Después de numero--:", numero); // 6
@@ -31,9 +23,8 @@ console.log("Después de numero--:", numero); // 6
 --numero; // Pre-decremento: también resta 1 antes de usar el valor
 console.log("Después de --numero:", numero); // 5
 
-// ==============================
 // DIFERENCIA ENTRE POSTFIJO Y PREFIJO
-// ==============================
+
 // Postfijo (numero++) → devuelve el valor y luego incrementa
 // Prefijo (++numero) → incrementa primero y luego devuelve
 
@@ -46,9 +37,7 @@ let b = 10;
 console.log("\n=== Prefijo ===");
 console.log("++b:", ++b); // Primero suma 1 → 11, luego muestra 11
 
-// ==============================
 // EJEMPLO PRÁCTICO: CONTADOR EN BUCLE
-// ==============================
 
 console.log("\n=== Ejemplo práctico con bucle ===");
 
@@ -59,9 +48,7 @@ while (contador < 5) {
   contador++; // Incrementa en cada iteración
 }
 
-// ==============================
 // OTRO EJEMPLO: DECREMENTO
-// ==============================
 
 let vidas = 3;
 
