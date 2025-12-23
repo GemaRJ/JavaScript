@@ -1,0 +1,20 @@
+.card-persona {
+  background-color: #f0f0f0; /* gris claro */
+}
+
+.card-empleado {
+  background-color: #d0e7ff; /* azul claro */
+}
+
+.card-estudiante {
+  background-color: #d0ffd6; /* verde claro */
+}
+
+.card-body h5 {
+  margin-bottom: 0;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Animate.css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Gestión de Personas</title>
+
+    <link rel="stylesheet" href="./utils/style.css" />
+  </head>
+  <body>
+    <main class="container mt-4">
+      <h1 class="mb-4">Gestión de Personas</h1>
+
+      <!-- FORMULARIO -->
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <input
+            type="text"
+            id="nombreInput"
+            class="form-control mb-2"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="col-md-3">
+          <input
+            type="text"
+            id="apellidoInput"
+            class="form-control mb-2"
+            placeholder="Apellido"
+          />
+        </div>
+        <div class="col-md-2">
+          <input
+            type="number"
+            id="edadInput"
+            class="form-control mb-2"
+            placeholder="Edad"
+          />
+        </div>
+        <div class="col-md-2">
+          <select class="form-select mb-2" id="selectTipo">
+            <option value="">--Tipo--</option>
+            <option value="persona">Persona</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="empleado">Empleado</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <input
+            type="text"
+            id="inputExtra"
+            class="form-control mb-2"
+            placeholder=""
+            style="display: none"
+          />
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary w-100 btnAgregar">Agregar</button>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="resultados"></div>
+    </main>
+
+    <script src="./utils/clases.js"></script>
+    <script src="./utils/index.js"></script>
+  </body>
+</html>
