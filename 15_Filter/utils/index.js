@@ -1,14 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Clase Producto
-  let Producto = class {
-    constructor(nombre, precio, categoria, imagen) {
-      this.nombre = nombre;
-      this.precio = precio;
-      this.categoria = categoria;
-      this.imagen = imagen;
-    }
-  };
-
   // Array inicial de productos
   let productos = [
     new Producto("Camiseta", 100, "ropa", "./utils/img/ropa/camiseta.png"),
@@ -40,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       divResultados.innerHTML += `
         <div class="col animate__animated animate__fadeInDown">
           <div class="card h-100">
-            <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
+            <img src="${item.imagen}" class="icono" alt="${item.nombre}">
             <div class="card-body">
               <h5 class="card-title">${item.nombre}</h5>
               <p class="card-text">Precio: ${item.precio} €</p>
