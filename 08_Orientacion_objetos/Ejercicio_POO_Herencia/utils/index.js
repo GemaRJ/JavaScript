@@ -73,22 +73,25 @@ document.addEventListener("DOMContentLoaded", () => {
   function mostrarPersonas() {
     resultados.innerHTML = "";
     personas.forEach((p, index) => {
+      // Determinar clase según tipo
+      let claseCard = "card-persona"; // por defecto
+      if (p instanceof Estudiante) claseCard = "card-estudiante";
+      if (p instanceof Empleado) claseCard = "card-empleado";
+
       resultados.innerHTML += `
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">${p.nombre} ${p.apellido}</h5>
-              <p class="card-text">Edad: ${p.edad}</p>
-              ${
-                p.infoExtra() ? `<p class="card-text">${p.infoExtra()}</p>` : ""
-              }
-            </div>
-            <div class="card-footer text-center">
-              <button class="btn btn-danger btn-sm btnEliminar" data-index="${index}">Eliminar</button>
-            </div>
+      <div class="col">
+        <div class="card h-100 ${claseCard}">
+          <div class="card-body">
+            <h5 class="card-title">${p.nombre} ${p.apellido}</h5>
+            <p class="card-text">Edad: ${p.edad}</p>
+            ${p.infoExtra() ? `<p class="card-text">${p.infoExtra()}</p>` : ""}
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-danger btn-sm btnEliminar" data-index="${index}">Eliminar</button>
           </div>
         </div>
-      `;
+      </div>
+    `;
     });
   }
 
