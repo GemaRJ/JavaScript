@@ -1,0 +1,45 @@
+<!-- Crea un elemento div con una clase CSS que defina un estilo específico. Añade un botón que, al hacer clic,
+ añada o elimine una clase CSS diferente al div utilizando classList.add(), classList.remove() o classList.toggle().
+ Observa cómo cambia el estilo del elemento. -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Cambiar clases CSS</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container mt-5 text-center">
+      <div class="container my-5 text-center">
+        <h1 class="mb-4">Cambiar clases CSS</h1>
+
+        <button id="btnCambiarEstilo" class="btn btn-primary mb-3">
+          Cambiar Estilo
+        </button>
+
+        <div id="caja" class="caja-estilo-1 p-5 text-center">
+          Esta es una caja con estilo inicial.
+        </div>
+      </div>
+    </main>
+    <script src="./index6.js"></script>
+  </body>
+</html>
