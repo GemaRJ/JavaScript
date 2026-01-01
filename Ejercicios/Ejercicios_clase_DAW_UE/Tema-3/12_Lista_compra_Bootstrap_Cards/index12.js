@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Selectores
+  // Selectores de los inputs, botón y contenedores
   let nombreInput = document.querySelector("#product-name");
   let cantidadInput = document.querySelector("#product-quantity");
   let precioInput = document.querySelector("#product-price");
@@ -7,14 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let contenedorProductos = document.querySelector("#products-container");
   let totalSpan = document.querySelector("#total");
 
+  // Variable para almacenar el total de la compra
   let totalCompra = 0;
 
+  // Evento click del botón "Añadir producto"
   btnAdd.addEventListener("click", () => {
     let nombre = nombreInput.value.trim();
     let cantidad = parseInt(cantidadInput.value);
     let precio = parseFloat(precioInput.value);
 
-    // Validación
+    // Validación de los campos
     if (
       nombre === "" ||
       isNaN(cantidad) ||
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let subtotal = cantidad * precio;
     totalCompra += subtotal;
 
-    // Crear card
+    // Crear la card
     let card = document.createElement("div");
     card.className = "card mb-3 animate__animated animate__fadeIn";
 
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `;
 
-    // Botón eliminar
+    // Botón eliminar dentro de la card
     let btnEliminar = card.querySelector("button");
     btnEliminar.addEventListener("click", () => {
       card.remove();
@@ -54,16 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
       totalSpan.textContent = totalCompra.toFixed(2) + " €";
     });
 
-    // Añadir card al contenedor
+    // Añadir la card al contenedor
     contenedorProductos.appendChild(card);
 
-    // Actualizar total
+    // Actualizar el total
     totalSpan.textContent = totalCompra.toFixed(2) + " €";
 
     // Limpiar formulario
     nombreInput.value = "";
     cantidadInput.value = "";
     precioInput.value = "";
-    nombreInput.focus();
   });
 });
