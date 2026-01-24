@@ -82,11 +82,32 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.borrarRanking = () => {
-    if (confirm("¿Borrar todo el historial?")) {
-      localStorage.removeItem("rankingTrivialDAW");
-      localStorage.removeItem("ultimosResultados");
-      location.reload();
-    }
+    Swal.fire({
+      title: "¿Borrar todo el historial?",
+      text: "Esta acción no se puede deshacer",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sí, borrar",
+      cancelButtonText: "Cancelar",
+      reverseButtons: true,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Borrar localStorage
+        localStorage.removeItem("rankingTrivialDAW");
+        localStorage.removeItem("ultimosResultados");
+
+        // Mostrar confirmación
+        Swal.fire({
+          title: "¡Borrado!",
+          text: "El historial ha sido eliminado",
+          icon: "success",
+          timer: 1500,
+          showConfirmButton: false,
+        }).then(() => {
+          location.reload(); // recargar la página
+        });
+      }
+    });
   };
 
   // --- 4. EJECUTAR ---
