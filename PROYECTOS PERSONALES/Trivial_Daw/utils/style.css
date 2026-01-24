@@ -74,3 +74,16 @@ body {
 #score, #timer, #current-question-num, #total-questions-num {
     font-weight: bold;
 }
+@media (max-width: 400px) {
+  h1.display-5 {
+    font-size: 1.5rem;
+  }
+  h4.card-title,
+  #question-text {
+    font-size: 1rem;
+  }
+  button.btn {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
