@@ -835,7 +835,7 @@ export const preguntasTrivial = {
     {
       id: 94,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "medium",
       question:
         "Dada la función 'function f(a, b, c)', ¿cómo asignamos los valores del array 'params = [1, 2, 3]'?",
       correct_answer: "f(...params)",
@@ -844,7 +844,7 @@ export const preguntasTrivial = {
     {
       id: 95,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "medium",
       question:
         "Para crear un objeto 'a' enlazado con un prototipo 'b', se debe ejecutar...",
       correct_answer: "a = Object.create(b);",
@@ -894,7 +894,7 @@ export const preguntasTrivial = {
     {
       id: 99,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question: "El código 'miArray.filter(return el < 5)'...",
       correct_answer:
         "Provoca un error de sintaxis, ya que no incluye una función como parámetro.",
@@ -929,7 +929,7 @@ export const preguntasTrivial = {
     {
       id: 102,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Si se desea obtener el primer elemento con clases 'clase1' y 'clase2', se debe ejecutar...",
       correct_answer: 'document.getElementsByClassName("clase1 clase2")[0]',
@@ -942,7 +942,7 @@ export const preguntasTrivial = {
     {
       id: 103,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "medium",
       question: "La diferencia entre event.target y event.currentTarget es...",
       correct_answer:
         "event.target hace referencia al elemento sobre el que se produce el evento y event.currentTarget hace referencia al elemento que tiene definido el manejador.",
@@ -995,7 +995,7 @@ export const preguntasTrivial = {
     {
       id: 107,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Dada una clase que define un componente personalizado, ¿en qué método es posible crear elementos del DOM?",
       correct_answer: "connectedCallback",
@@ -1016,7 +1016,7 @@ export const preguntasTrivial = {
     {
       id: 109,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Si un objeto que tiene definidos métodos se guarda en almacenamiento local, ¿qué ocurre con dichos métodos?",
       correct_answer:
@@ -1135,7 +1135,7 @@ export const preguntasTrivial = {
     {
       id: 118,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Dado 'let res = await fetch(url)', ¿cómo obtienes los datos JSON?",
       correct_answer: "await res.json();",
@@ -1161,7 +1161,7 @@ export const preguntasTrivial = {
     {
       id: 120,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Es posible descargar datos de otro dominio distinto al origen con fetch?",
       correct_answer:
@@ -1184,7 +1184,7 @@ export const preguntasTrivial = {
     {
       id: 122,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "En un proyecto con Webpack, ¿qué hay que hacer para probar la aplicación tras un cambio en el código?",
       correct_answer:
@@ -1274,7 +1274,7 @@ export const preguntasTrivial = {
     {
       id: 129,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Qué utiliza React para crear enlaces de datos de doble sentido en formularios?",
       correct_answer:
@@ -1336,7 +1336,7 @@ export const preguntasTrivial = {
     {
       id: 134,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Cómo escucha un componente padre un evento personalizado llamado 'evento1' emitido por el hijo?",
       correct_answer: '@evento1="accion"',
@@ -1368,7 +1368,7 @@ export const preguntasTrivial = {
       correct_answer: "this.$emit('evento1', arg1, arg2)",
       incorrect_answers: [
         "this.emit('evento1', arg1, arg2)",
-        "this.$emit(evento1, arg1, arg2)", // sin comillas en el nombre
+        "this.$emit(evento1, arg1, arg2)",
         "$dispatch('evento1', arg1, arg2)",
       ],
     },
@@ -1384,7 +1384,7 @@ export const preguntasTrivial = {
     {
       id: 138,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Si defines una ruta dinámica '/vehiculos/:vehiculo', ¿cómo accedes al parámetro en el componente?",
       correct_answer: "this.$route.params.vehiculo",
@@ -1397,7 +1397,7 @@ export const preguntasTrivial = {
     {
       id: 139,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "En Nuxt, ¿qué fichero hay que crear para definir la ruta automática '/vehiculos'?",
       correct_answer: "pages/vehiculos/index.vue",
@@ -1493,7 +1493,7 @@ export const preguntasTrivial = {
     {
       id: 147,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Para desplegar una aplicación Vue, el sistema de integración continua debe:",
       correct_answer:
@@ -1519,7 +1519,7 @@ export const preguntasTrivial = {
     {
       id: 149,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "medium",
       question:
         "¿Qué servicios ofrecen características de despliegue continuo?",
       correct_answer: "AWS Amplify y Azure Web Apps.",
@@ -1532,7 +1532,7 @@ export const preguntasTrivial = {
     {
       id: 150,
       category: "DESARROLLO WEB EN ENTORNO CLIENTE",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Cuáles de los siguientes servicios proporcionan servicios de entrega de contenido (CDN)?",
       correct_answer: "AWS CloudFront y Azure CDN.",
@@ -3695,7 +3695,7 @@ export const preguntasTrivial = {
     {
       id: 433,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Cómo influye la inteligencia emocional en la toma de decisiones profesionales?",
       correct_answer:
@@ -3880,7 +3880,7 @@ export const preguntasTrivial = {
     {
       id: 447,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Qué elemento NO forma parte del mapa de valor (Value Proposition Canvas)?",
       correct_answer: "Análisis de la competencia.",
@@ -3906,7 +3906,7 @@ export const preguntasTrivial = {
     {
       id: 449,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question: "Objetivo del patrón de negocio de desagregación:",
       correct_answer:
         "Dividir actividades en compañías independientes para aumentar rentabilidad.",
@@ -4012,7 +4012,7 @@ export const preguntasTrivial = {
     {
       id: 457,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "¿Qué establece la Ley de Inteligencia Artificial (Reglamento UE 2024/1689)?",
       correct_answer:
@@ -4068,7 +4068,7 @@ export const preguntasTrivial = {
     {
       id: 462,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "En la comunicación no verbal, ¿qué porcentaje del mensaje proviene de las palabras según Mehrabian?",
       correct_answer: "7%.",
@@ -4181,7 +4181,7 @@ export const preguntasTrivial = {
     {
       id: 471,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "medium",
       question: "¿En qué consiste la técnica SCAMPER?",
       correct_answer:
         "Modificar productos usando: Sustituir, Combinar, Adaptar, Modificar, Proponer, Eliminar, Reorganizar.",
@@ -4229,7 +4229,7 @@ export const preguntasTrivial = {
     {
       id: 475,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question:
         "Rol de innovación que analiza la conducta humana y el entorno:",
       correct_answer: "El antropólogo.",
@@ -4318,7 +4318,7 @@ export const preguntasTrivial = {
     {
       id: 482,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question: "¿Qué caracteriza al mundo BANI?",
       correct_answer:
         "Fragilidad, ansiedad, no linealidad e incomprensibilidad.",
@@ -4445,7 +4445,7 @@ export const preguntasTrivial = {
     {
       id: 492,
       category: "Itinerario Personal para la Empleabilidad II",
-      difficulty: "hard",
+      difficulty: "easy",
       question: "Propósito de la prueba 'imposter judo' en testeo de PMV:",
       correct_answer:
         "Aprovechar productos existentes para simular lanzamiento y obtener datos.",
@@ -4831,6 +4831,813 @@ export const preguntasTrivial = {
         "static function metodo():",
         "static def metodo(self):",
         "@staticmethod(self)",
+      ],
+    },
+    {
+      id: 530,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question:
+        "¿Cuál es el primer paso en un proceso de empleabilidad eficiente?",
+      correct_answer:
+        "Conocerse a uno mismo (habilidades, intereses y objetivos)",
+      incorrect_answers: [
+        "Enviar currículums",
+        "Hacer entrevistas",
+        "Aceptar cualquier trabajo",
+      ],
+    },
+    {
+      id: 531,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question:
+        "¿Qué documento resume la formación y experiencia profesional de una persona?",
+      correct_answer: "Currículum vitae",
+      incorrect_answers: [
+        "Carta de presentación",
+        "Contrato laboral",
+        "Nómina",
+      ],
+    },
+    {
+      id: 532,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué significa adaptar el currículum a una oferta concreta?",
+      correct_answer: "Destacar lo más relacionado con el puesto",
+      incorrect_answers: [
+        "Mentir sobre la experiencia",
+        "Cambiar el diseño sin modificar el contenido",
+        "Usar siempre el mismo modelo",
+      ],
+    },
+    {
+      id: 533,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question:
+        "¿Qué herramienta digital es más útil para buscar empleo actualmente?",
+      correct_answer: "Portales de empleo y LinkedIn",
+      incorrect_answers: ["Facebook personal", "WhatsApp", "Juegos online"],
+    },
+    {
+      id: 534,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Por qué es importante prepararse antes de una entrevista?",
+      correct_answer: "Para responder con seguridad y coherencia",
+      incorrect_answers: [
+        "Para hablar más que el entrevistador",
+        "Para improvisar mejor",
+        "No es importante",
+      ],
+    },
+    {
+      id: 535,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Cuál de estas acciones mejora la empleabilidad?",
+      correct_answer: "Aprender nuevas competencias",
+      incorrect_answers: [
+        "Rechazar la formación",
+        "No aceptar cambios",
+        "Trabajar siempre solo",
+      ],
+    },
+    {
+      id: 536,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué son las competencias transversales?",
+      correct_answer:
+        "Habilidades útiles en muchos trabajos (trabajo en equipo, comunicación…)",
+      incorrect_answers: [
+        "Conocimientos técnicos específicos",
+        "Idiomas",
+        "Títulos académicos",
+      ],
+    },
+    {
+      id: 537,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué actitud valoran más las empresas?",
+      correct_answer: "Proactividad",
+      incorrect_answers: ["Pasividad", "Falta de iniciativa", "Desinterés"],
+    },
+    {
+      id: 538,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Para qué sirve la formación continua?",
+      correct_answer: "Para adaptarse a los cambios del mercado laboral",
+      incorrect_answers: [
+        "Solo para estudiantes",
+        "Para perder tiempo",
+        "Para evitar trabajar",
+      ],
+    },
+    {
+      id: 539,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué es la marca personal?",
+      correct_answer: "La imagen profesional que transmites",
+      incorrect_answers: [
+        "Un logotipo",
+        "La forma de vestir",
+        "Un perfil falso",
+      ],
+    },
+    {
+      id: 540,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué es emprender?",
+      correct_answer: "Crear un proyecto propio asumiendo riesgos",
+      incorrect_answers: [
+        "Copiar ideas sin permiso",
+        "Trabajar para otros",
+        "No tener jefe",
+      ],
+    },
+    {
+      id: 541,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question:
+        "¿Cuál es una característica común de las personas emprendedoras?",
+      correct_answer: "Creatividad",
+      incorrect_answers: [
+        "Miedo al cambio",
+        "Falta de iniciativa",
+        "Pasividad",
+      ],
+    },
+    {
+      id: 542,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué documento explica cómo funcionará una empresa?",
+      correct_answer: "Plan de empresa",
+      incorrect_answers: ["Currículum", "Contrato laboral", "Nómina"],
+    },
+    {
+      id: 543,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué significa que una empresa sea viable?",
+      correct_answer: "Que pueda mantenerse económicamente",
+      incorrect_answers: [
+        "Que sea bonita",
+        "Que tenga muchos empleados",
+        "Que tenga redes sociales",
+      ],
+    },
+    {
+      id: 544,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué tipo de empresa pertenece a una sola persona?",
+      correct_answer: "Autónomo/a",
+      incorrect_answers: ["Sociedad anónima", "Cooperativa", "Multinacional"],
+    },
+    {
+      id: 545,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué es el análisis del entorno?",
+      correct_answer:
+        "Estudiar factores externos e internos que influyen en la empresa",
+      incorrect_answers: [
+        "Mirar la decoración del local",
+        "Analizar sólo a los trabajadores",
+        "Revisar el horario",
+      ],
+    },
+    {
+      id: 546,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Cuál de estos es un factor externo?",
+      correct_answer: "Situación económica",
+      incorrect_answers: [
+        "Motivación del personal",
+        "Organización interna",
+        "Horarios",
+      ],
+    },
+    {
+      id: 547,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué analiza el estudio de la competencia?",
+      correct_answer: "Otras empresas que ofrecen lo mismo",
+      incorrect_answers: [
+        "Los precios del proveedor",
+        "Los empleados",
+        "El local",
+      ],
+    },
+    {
+      id: 548,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué es un cliente potencial?",
+      correct_answer: "Una persona que podría comprar el producto",
+      incorrect_answers: ["Un proveedor", "Un trabajador", "Un competidor"],
+    },
+    {
+      id: 549,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Por qué es importante conocer el entorno antes de emprender?",
+      correct_answer: "Para tomar mejores decisiones",
+      incorrect_answers: [
+        "Para copiar ideas",
+        "Para gastar más dinero",
+        "No es importante",
+      ],
+    },
+    {
+      id: 550,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué es un plan de marketing?",
+      correct_answer:
+        "Un conjunto de acciones para vender un producto o servicio",
+      incorrect_answers: ["Un documento legal", "Un contrato", "Un currículum"],
+    },
+    {
+      id: 551,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué significa la “P” de producto en el marketing mix?",
+      correct_answer: "Lo que se ofrece al cliente",
+      incorrect_answers: ["Precio", "Promoción", "Publicidad"],
+    },
+    {
+      id: 552,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué objetivo principal tiene la promoción?",
+      correct_answer: "Dar a conocer el producto o servicio",
+      incorrect_answers: [
+        "Subir precios",
+        "Reducir calidad",
+        "Cerrar la empresa",
+      ],
+    },
+    {
+      id: 553,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Qué canal es un ejemplo de marketing digital?",
+      correct_answer: "Redes sociales",
+      incorrect_answers: ["Cartel en la calle", "Buzoneo", "Radio antigua"],
+    },
+    {
+      id: 554,
+      category: "Itinerario Personal para la Empleabilidad II",
+      difficulty: "hard",
+      question: "¿Por qué es importante definir el público objetivo?",
+      correct_answer: "Para dirigir mejor las acciones de marketing",
+      incorrect_answers: [
+        "Para vender a todo el mundo",
+        "Para gastar más dinero",
+        "No es necesario",
+      ],
+    },
+    {
+      id: 555,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué es el hoisting en JavaScript?",
+      correct_answer:
+        "El comportamiento por el cual las declaraciones se mueven al inicio de su contexto",
+      incorrect_answers: [
+        "La ejecución anticipada de funciones",
+        "La conversión automática de tipos",
+        "La eliminación de variables no usadas",
+      ],
+    },
+    {
+      id: 556,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué tipo de scope tiene una variable declarada con let?",
+      correct_answer: "Ámbito de bloque",
+      incorrect_answers: [
+        "Ámbito global",
+        "Ámbito de función",
+        "Ámbito dinámico",
+      ],
+    },
+    {
+      id: 557,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué devuelve una función sin sentencia return?",
+      correct_answer: "undefined",
+      incorrect_answers: ["null", "false", "0"],
+    },
+    {
+      id: 558,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué operador se utiliza para la propagación de elementos en arrays u objetos?",
+      correct_answer: "El operador spread (...)",
+      incorrect_answers: [
+        "El operador rest (**)",
+        "El operador concat (+)",
+        "El operador assign (=)",
+      ],
+    },
+    {
+      id: 559,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método convierte un JSON en un objeto JavaScript?",
+      correct_answer: "JSON.parse()",
+      incorrect_answers: [
+        "JSON.stringify()",
+        "JSON.convert()",
+        "JSON.toObject()",
+      ],
+    },
+    {
+      id: 560,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método convierte un objeto JavaScript en una cadena JSON?",
+      correct_answer: "JSON.stringify()",
+      incorrect_answers: ["JSON.parse()", "JSON.encode()", "JSON.toString()"],
+    },
+    {
+      id: 561,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué estructura se usa para manejar errores en JavaScript?",
+      correct_answer: "try...catch",
+      incorrect_answers: ["if...else", "throw...error", "errorHandle"],
+    },
+    {
+      id: 562,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué palabra clave lanza manualmente una excepción?",
+      correct_answer: "throw",
+      incorrect_answers: ["error", "exception", "catch"],
+    },
+    {
+      id: 563,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método de Array ejecuta una función para cada elemento sin devolver un nuevo array?",
+      correct_answer: "forEach()",
+      incorrect_answers: ["map()", "filter()", "reduce()"],
+    },
+    {
+      id: 564,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método de Array devuelve un nuevo array con los elementos que cumplen una condición?",
+      correct_answer: "filter()",
+      incorrect_answers: ["map()", "forEach()", "find()"],
+    },
+    {
+      id: 565,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método de Array transforma cada elemento y devuelve un nuevo array?",
+      correct_answer: "map()",
+      incorrect_answers: ["forEach()", "reduce()", "every()"],
+    },
+    {
+      id: 566,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método de Array devuelve el primer elemento que cumple una condición?",
+      correct_answer: "find()",
+      incorrect_answers: ["filter()", "some()", "includes()"],
+    },
+    {
+      id: 567,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué devuelve el método includes()?",
+      correct_answer: "Un valor booleano",
+      incorrect_answers: [
+        "El índice del elemento",
+        "El propio elemento",
+        "Un array",
+      ],
+    },
+    {
+      id: 568,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué hace el método reduce()?",
+      correct_answer: "Reduce un array a un único valor",
+      incorrect_answers: [
+        "Elimina elementos duplicados",
+        "Ordena el array",
+        "Filtra elementos",
+      ],
+    },
+    {
+      id: 569,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué operador comprueba si una propiedad existe en un objeto?",
+      correct_answer: "in",
+      incorrect_answers: ["has", "exists", "typeof"],
+    },
+    {
+      id: 570,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué valor devuelve typeof null?",
+      correct_answer: "object",
+      incorrect_answers: ["null", "undefined", "boolean"],
+    },
+    {
+      id: 571,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué estructura permite desestructurar valores de arrays u objetos?",
+      correct_answer: "Destructuring",
+      incorrect_answers: ["Hoisting", "Cloning", "Binding"],
+    },
+    {
+      id: 572,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué objeto representa la ventana del navegador?",
+      correct_answer: "window",
+      incorrect_answers: ["document", "navigator", "screen"],
+    },
+    {
+      id: 573,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método muestra información en la consola del navegador?",
+      correct_answer: "console.log()",
+      incorrect_answers: ["alert()", "print()", "debug()"],
+    },
+    {
+      id: 574,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué API permite almacenar datos en el navegador sin fecha de caducidad?",
+      correct_answer: "localStorage",
+      incorrect_answers: ["sessionStorage", "cookies", "cacheStorage"],
+    },
+    {
+      id: 575,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método elimina un dato de localStorage?",
+      correct_answer: "localStorage.removeItem()",
+      incorrect_answers: [
+        "localStorage.delete()",
+        "localStorage.clearItem()",
+        "localStorage.remove()",
+      ],
+    },
+    {
+      id: 576,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué API se utiliza para realizar peticiones HTTP modernas?",
+      correct_answer: "Fetch API",
+      incorrect_answers: ["DOM API", "Storage API", "History API"],
+    },
+    {
+      id: 577,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué devuelve fetch() por defecto?",
+      correct_answer: "Una Promise",
+      incorrect_answers: ["Un objeto JSON", "Un string", "Un NodeList"],
+    },
+    {
+      id: 578,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué palabra clave se usa para trabajar con código asíncrono de forma secuencial?",
+      correct_answer: "async/await",
+      incorrect_answers: ["promise/then", "callback", "defer"],
+    },
+    {
+      id: 579,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué objeto representa una operación asíncrona futura?",
+      correct_answer: "Promise",
+      incorrect_answers: ["Callback", "Event", "Thread"],
+    },
+    {
+      id: 580,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método se ejecuta cuando una Promise se resuelve correctamente?",
+      correct_answer: "then()",
+      incorrect_answers: ["catch()", "finally()", "resolve()"],
+    },
+    {
+      id: 581,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método captura errores en una Promise?",
+      correct_answer: "catch()",
+      incorrect_answers: ["error()", "fail()", "reject()"],
+    },
+    {
+      id: 582,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método se ejecuta siempre al finalizar una Promise?",
+      correct_answer: "finally()",
+      incorrect_answers: ["then()", "catch()", "end()"],
+    },
+    {
+      id: 583,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué objeto proporciona información sobre el navegador?",
+      correct_answer: "navigator",
+      incorrect_answers: ["window", "location", "history"],
+    },
+    {
+      id: 584,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué propiedad devuelve la URL actual?",
+      correct_answer: "window.location.href",
+      incorrect_answers: ["document.url", "navigator.url", "history.href"],
+    },
+    {
+      id: 585,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué API permite manipular el historial del navegador?",
+      correct_answer: "History API",
+      incorrect_answers: ["Location API", "Navigator API", "Storage API"],
+    },
+    {
+      id: 586,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método añade una nueva entrada al historial sin recargar la página?",
+      correct_answer: "history.pushState()",
+      incorrect_answers: [
+        "history.add()",
+        "history.replace()",
+        "history.forward()",
+      ],
+    },
+    {
+      id: 587,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método reemplaza la entrada actual del historial?",
+      correct_answer: "history.replaceState()",
+      incorrect_answers: [
+        "history.pushState()",
+        "history.swapState()",
+        "history.setState()",
+      ],
+    },
+    {
+      id: 588,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué es un callback?",
+      correct_answer: "Una función pasada como argumento a otra función",
+      incorrect_answers: [
+        "Una promesa rechazada",
+        "Un evento del DOM",
+        "Un método del navegador",
+      ],
+    },
+    {
+      id: 589,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué problema describe el callback hell?",
+      correct_answer: "Anidamiento excesivo de callbacks",
+      incorrect_answers: [
+        "Errores de sintaxis",
+        "Bloqueo del hilo principal",
+        "Fugas de memoria",
+      ],
+    },
+    {
+      id: 590,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué técnica evita modificar directamente un objeto original?",
+      correct_answer: "Inmutabilidad",
+      incorrect_answers: ["Mutación", "Hoisting", "Encapsulación"],
+    },
+    {
+      id: 591,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método crea una copia superficial de un objeto?",
+      correct_answer: "Object.assign()",
+      incorrect_answers: ["Object.clone()", "Object.copy()", "Object.merge()"],
+    },
+    {
+      id: 592,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué operador permite copiar un objeto superficialmente?",
+      correct_answer: "Spread operator (...)",
+      incorrect_answers: [
+        "Assign operator (=)",
+        "Clone operator (++)",
+        "Copy operator (&&)",
+      ],
+    },
+    {
+      id: 593,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué diferencia hay entre copia superficial y profunda?",
+      correct_answer: "La profunda copia también los objetos anidados",
+      incorrect_answers: [
+        "La superficial es más lenta",
+        "La profunda no copia arrays",
+        "No existe diferencia",
+      ],
+    },
+    {
+      id: 594,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método permite convertir un NodeList en un Array?",
+      correct_answer: "Array.from()",
+      incorrect_answers: [
+        "Array.parse()",
+        "NodeList.toArray()",
+        "Object.values()",
+      ],
+    },
+    {
+      id: 595,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué objeto representa el evento global en JavaScript moderno?",
+      correct_answer: "El objeto event pasado al manejador",
+      incorrect_answers: ["window.event", "document.event", "globalEvent"],
+    },
+    {
+      id: 596,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué fase del evento ocurre desde el elemento padre al hijo?",
+      correct_answer: "Captura",
+      incorrect_answers: ["Burbujeo", "Target", "Callback"],
+    },
+    {
+      id: 597,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué fase del evento ocurre desde el elemento hijo al padre?",
+      correct_answer: "Burbujeo",
+      incorrect_answers: ["Captura", "Delegación", "Target"],
+    },
+    {
+      id: 598,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué tercer parámetro de addEventListener activa la fase de captura?",
+      correct_answer: "true",
+      incorrect_answers: ["false", "capture", "once"],
+    },
+    {
+      id: 599,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué es la delegación de eventos?",
+      correct_answer: "Gestionar eventos desde un elemento padre",
+      incorrect_answers: [
+        "Eliminar eventos automáticamente",
+        "Reasignar eventos",
+        "Detener la propagación",
+      ],
+    },
+    {
+      id: 600,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método comprueba si un elemento contiene otro?",
+      correct_answer: "element.contains()",
+      incorrect_answers: [
+        "element.hasChild()",
+        "element.includes()",
+        "element.find()",
+      ],
+    },
+    {
+      id: 601,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué propiedad devuelve los nodos hijos de un elemento?",
+      correct_answer: "childNodes",
+      incorrect_answers: ["childrenList", "childElements", "nodes"],
+    },
+    {
+      id: 602,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué propiedad devuelve solo los elementos HTML hijos?",
+      correct_answer: "children",
+      incorrect_answers: ["childNodes", "elements", "htmlChildren"],
+    },
+    {
+      id: 603,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué propiedad devuelve el nodo padre?",
+      correct_answer: "parentNode",
+      incorrect_answers: ["parentElementNode", "fatherNode", "ownerNode"],
+    },
+    {
+      id: 604,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método clona un nodo del DOM?",
+      correct_answer: "cloneNode()",
+      incorrect_answers: ["copyNode()", "duplicateNode()", "replicateNode()"],
+    },
+    {
+      id: 605,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué argumento de cloneNode indica clonación profunda?",
+      correct_answer: "true",
+      incorrect_answers: ["false", "deep", "all"],
+    },
+    {
+      id: 606,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué método comprueba si dos nodos son iguales?",
+      correct_answer: "isEqualNode()",
+      incorrect_answers: ["equals()", "compareNode()", "sameNode()"],
+    },
+    {
+      id: 607,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question:
+        "¿Qué método devuelve true si dos referencias apuntan al mismo nodo?",
+      correct_answer: "isSameNode()",
+      incorrect_answers: ["isEqualNode()", "compare()", "equalsNode()"],
+    },
+    {
+      id: 608,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué propiedad indica si un elemento tiene nodos hijos?",
+      correct_answer: "hasChildNodes()",
+      incorrect_answers: ["hasChildren", "childrenExists", "childCount"],
+    },
+    {
+      id: 609,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Qué API permite observar cambios en el DOM?",
+      correct_answer: "MutationObserver",
+      incorrect_answers: ["DOMWatcher", "EventObserver", "ChangeListener"],
+    },
+    {
+      id: 610,
+      category: "DESARROLLO WEB EN ENTORNO CLIENTE",
+      difficulty: "hard",
+      question: "¿Para qué se utiliza MutationObserver?",
+      correct_answer: "Detectar cambios dinámicos en el DOM",
+      incorrect_answers: [
+        "Gestionar eventos del usuario",
+        "Modificar estilos CSS",
+        "Optimizar peticiones HTTP",
       ],
     },
   ], // Cierra el array 'results'

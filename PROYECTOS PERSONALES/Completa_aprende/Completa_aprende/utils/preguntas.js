@@ -1,3 +1,12 @@
+/**
+ * ------------------------------------------------------------------
+ * PROYECTO: APRENDE Y COMPLETA PRO
+ * DESARROLLADO POR: GEMA
+ * ASIGNATURA: Desarrollo Web
+ * FECHA: Enero 2026
+ * ------------------------------------------------------------------
+ */
+
 const BANCO_DATOS = {
   // CATEGORÍA 1: ADIVINA CON IMÁGENES (Vocabulario y asociación)
   imagenes: [

@@ -1,27 +1,25 @@
-/* --- 1. ESTRUCTURA --- */
+/* ESTRUCTURA GENERAL */
 body {
-    /* IMPORTANTE: Transparente para ver el fondo */
     background-color: transparent; 
     min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* --- 2. FONDO FUTURISTA --- */
+/*FONDO  / OVERLAY */
 .bg-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
-    /* RUTA: Entra en imagenes/ desde utils/ */
     background: url('imagenes/fondo.png') no-repeat center center;
-    
     background-size: cover;
     opacity: 0.6; /* Ajusta opacidad */
     z-index: -1;
 }
 
-/* --- 3. BOTONES RESPUESTA --- */
+/* BOTONES DE RESPUESTA */
 .btn-answer {
     text-align: left;
     border: 1px solid #dee2e6;
@@ -30,6 +28,11 @@ body {
     font-size: 1rem;
     color: #212529;
     transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
 }
 
 .btn-answer:hover {
@@ -39,19 +42,35 @@ body {
     cursor: pointer;
 }
 
-/* --- 4. ESTADOS --- */
+/* ESTADOS DE RESPUESTA*/
 .btn-correct {
     background-color: #198754 !important;
-    color: white !important;
+    color: #ffffff !important;
     border-color: #198754 !important;
 }
 
 .btn-wrong {
     background-color: #dc3545 !important;
-    color: white !important;
+    color: #ffffff !important;
     border-color: #dc3545 !important;
 }
 
 .text-danger {
     color: #dc3545 !important;
+}
+
+/* ELEMENTOS DE INTERFAZ ADICIONALES */
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#score, #timer, #current-question-num, #total-questions-num {
+    font-weight: bold;
 }
