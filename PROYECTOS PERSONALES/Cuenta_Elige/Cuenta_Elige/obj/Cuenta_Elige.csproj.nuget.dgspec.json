@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\PROYECTOS PERSONALES\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj": {}
+    "C:\\Users\\gr\\Documents\\GitHub\\PROYECTO_Playgo\\Minijuegos\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\PROYECTOS PERSONALES\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj": {
+    "C:\\Users\\gr\\Documents\\GitHub\\PROYECTO_Playgo\\Minijuegos\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\PROYECTOS PERSONALES\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj",
+        "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\PROYECTO_Playgo\\Minijuegos\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj",
         "projectName": "Cuenta_Elige",
-        "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\PROYECTOS PERSONALES\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj",
+        "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\PROYECTO_Playgo\\Minijuegos\\Cuenta_Elige\\Cuenta_Elige\\Cuenta_Elige.csproj",
         "packagesPath": "C:\\Users\\gr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\JavaScript\\PROYECTOS PERSONALES\\Cuenta_Elige\\Cuenta_Elige\\obj\\",
+        "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\PROYECTO_Playgo\\Minijuegos\\Cuenta_Elige\\Cuenta_Elige\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gr\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Completa_aprende")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c576233fe431e4b5b0adf437fceeef88b5c602a1")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a51c633bf7168e5b786ca8e9731e879c7ca8ee0a")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("Completa_aprende")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Completa_aprende")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
