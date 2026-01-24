@@ -110,6 +110,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  // --- BOTÓN SALIR ---
+  const btnSalir = document.querySelector("#btn-salir");
+  if (btnSalir) {
+    btnSalir.addEventListener("click", () => {
+      Swal.fire({
+        title: "Gracias por jugar",
+        text: "Volviendo al inicio...",
+        icon: "info",
+        confirmButtonText: "Aceptar",
+        allowOutsideClick: false,
+      }).then(() => {
+        window.location.href = "index.html"; // redirige a la página de inicio
+      });
+    });
+  }
+
   // --- 4. EJECUTAR ---
   mostrarGanador();
   cargarRanking();
