@@ -257,13 +257,6 @@ function pasarTurno() {
   }
 }
 
-function salirMenuPrincipal() {
-  config.jugadores = [];
-  config.numJugadores = 1;
-  document.querySelector("#num-jugadores").textContent = "1";
-  generarInputsNombres();
-  cambiarVista("setup");
-}
 // ================================
 // RANKING Y CONFETI
 // ================================
