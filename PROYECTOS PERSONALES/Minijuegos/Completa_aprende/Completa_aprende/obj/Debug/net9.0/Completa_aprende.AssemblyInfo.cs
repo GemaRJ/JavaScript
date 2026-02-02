@@ -14,11 +14,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< Updated upstream:PROYECTOS PERSONALES/Minijuegos/Completa_aprende/Completa_aprende/obj/Debug/net9.0/Completa_aprende.AssemblyInfo.cs
+<<<<<<< Updated upstream:PROYECTOS PERSONALES/Minijuegos/Completa_aprende/Completa_aprende/obj/Debug/net9.0/Completa_aprende.AssemblyInfo.cs
 <<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c576233fe431e4b5b0adf437fceeef88b5c602a1")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a51c633bf7168e5b786ca8e9731e879c7ca8ee0a")]
 >>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a51c633bf7168e5b786ca8e9731e879c7ca8ee0a")]
+>>>>>>> Stashed changes:PROYECTOS PERSONALES/Completa_aprende/Completa_aprende/obj/Debug/net9.0/Completa_aprende.AssemblyInfo.cs
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a51c633bf7168e5b786ca8e9731e879c7ca8ee0a")]
 >>>>>>> Stashed changes:PROYECTOS PERSONALES/Completa_aprende/Completa_aprende/obj/Debug/net9.0/Completa_aprende.AssemblyInfo.cs
