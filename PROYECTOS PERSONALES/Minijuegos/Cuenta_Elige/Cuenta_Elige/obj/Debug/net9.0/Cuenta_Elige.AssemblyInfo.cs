@@ -15,7 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< Updated upstream:PROYECTOS PERSONALES/Minijuegos/Cuenta_Elige/Cuenta_Elige/obj/Debug/net9.0/Cuenta_Elige.AssemblyInfo.cs
 <<<<<<< Updated upstream:PROYECTOS PERSONALES/Minijuegos/Cuenta_Elige/Cuenta_Elige/obj/Debug/net9.0/Cuenta_Elige.AssemblyInfo.cs
+<<<<<<< Updated upstream:PROYECTOS PERSONALES/Minijuegos/Cuenta_Elige/Cuenta_Elige/obj/Debug/net9.0/Cuenta_Elige.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62da2a7bb017b339552ae72bc33bc237b408cf04")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+548c7adf6c926ba52dd7969f9bd7203a9afb6a8c")]
+>>>>>>> Stashed changes:PROYECTOS PERSONALES/Cuenta_Elige/Cuenta_Elige/obj/Debug/net9.0/Cuenta_Elige.AssemblyInfo.cs
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+548c7adf6c926ba52dd7969f9bd7203a9afb6a8c")]
 >>>>>>> Stashed changes:PROYECTOS PERSONALES/Cuenta_Elige/Cuenta_Elige/obj/Debug/net9.0/Cuenta_Elige.AssemblyInfo.cs
