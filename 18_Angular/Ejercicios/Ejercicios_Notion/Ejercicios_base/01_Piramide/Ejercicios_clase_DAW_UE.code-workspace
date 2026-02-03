@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../Ejercicios_clase_DAW_UE"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Ejercicios_Notion"
+  }
+}

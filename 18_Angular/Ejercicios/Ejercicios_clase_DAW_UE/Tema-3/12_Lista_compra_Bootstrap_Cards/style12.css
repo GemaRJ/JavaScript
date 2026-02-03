@@ -1,0 +1,13 @@
+#miImagen{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+ 
+}
+
+body {
+        padding: 20px;
+      }
+      .card {
+        transition: all 0.3s ease;
+      }

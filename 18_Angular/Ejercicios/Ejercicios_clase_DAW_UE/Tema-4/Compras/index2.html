@@ -1,0 +1,50 @@
+<!-- Crear una página web sencilla que simule una tienda online con un carrito de compra -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online Sencilla</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./utils/style.css" />
+  </head>
+  <body>
+    <main class="container mt-4">
+      <h1 class="text-center mb-4">Tienda Online</h1>
+
+      <!-- Filtro por categoría (opcional) -->
+      <div class="mb-4">
+        <label for="filtroCategoria" class="form-label"
+          >Filtrar por categoría:</label
+        >
+        <select id="filtroCategoria" class="form-select w-auto">
+          <option value="todas">Todas</option>
+        </select>
+      </div>
+
+      <!-- Productos -->
+      <div class="row" id="contenedorProductos"></div>
+
+      <hr />
+
+      <!-- Carrito -->
+      <h2>Carrito</h2>
+      <ul class="list-group mb-3" id="listaCarrito"></ul>
+      <p>Total: €<span id="totalCarrito">0.00</span></p>
+      <button id="vaciarCarrito" class="btn btn-danger">Vaciar Carrito</button>
+    </main>
+
+    <script src="./utils/index2.js"></script>
+  </body>
+</html>

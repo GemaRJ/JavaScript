@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../01_Variables"
+		},
+		{
+			"path": "../02_Operadores"
+		},
+		{
+			"path": "../03_Comparadores"
+		},
+		{
+			"path": "../04_Operadores_logicos"
+		},
+		{
+			"path": "../05_Operadores_asignacion"
+		},
+		{
+			"path": "../06_Operadores_incremento_decremento"
+		},
+		{
+			"path": "../07_Arrays"
+		},
+		{
+			"path": "../08_Orientacion_objetos"
+		},
+		{
+			"path": "../09_Funciones"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "09_Funciones"
+	}
+}
