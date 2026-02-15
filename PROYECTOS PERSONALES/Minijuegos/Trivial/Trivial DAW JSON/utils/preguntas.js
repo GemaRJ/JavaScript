@@ -7,7 +7,7 @@ export const preguntasTrivial = {
     {
       id: 1,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question:
         "¿Qué propiedad CSS se utiliza para cambiar el color del texto?",
       correct_answer: "color",
@@ -16,7 +16,7 @@ export const preguntasTrivial = {
     {
       id: 2,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Propiedad para establecer un fondo de color azul?",
       correct_answer: "background-color: blue;",
       incorrect_answers: [
@@ -28,7 +28,7 @@ export const preguntasTrivial = {
     {
       id: 3,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Cómo se aplica un margen de 20 píxeles en todos los lados?",
       correct_answer: "Sirven: 'margin: 20px' o 'margin: 20px 20px...'",
       incorrect_answers: [
@@ -40,7 +40,7 @@ export const preguntasTrivial = {
     {
       id: 4,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Qué propiedad pone el texto en negrita?",
       correct_answer: "font-weight: bold;",
       incorrect_answers: [
@@ -52,7 +52,7 @@ export const preguntasTrivial = {
     {
       id: 5,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Cómo se escribe un comentario en CSS?",
       correct_answer: "/* Comentario */",
       incorrect_answers: ["// Comentario", "", "** Comentario **"],
@@ -60,7 +60,7 @@ export const preguntasTrivial = {
     {
       id: 6,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Qué propiedad subraya un texto?",
       correct_answer: "text-decoration: underline;",
       incorrect_answers: [
@@ -72,7 +72,7 @@ export const preguntasTrivial = {
     {
       id: 7,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Propiedad correcta para cambiar el tipo de fuente?",
       correct_answer: "font-family",
       incorrect_answers: ["font-type", "text-font", "typeface"],
@@ -80,7 +80,7 @@ export const preguntasTrivial = {
     {
       id: 8,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question:
         "¿Qué valor de 'display' permite comportamiento de bloque y línea a la vez?",
       correct_answer: "inline-block",
@@ -89,7 +89,7 @@ export const preguntasTrivial = {
     {
       id: 9,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Sintaxis correcta para borde rojo sólido de 2px?",
       correct_answer: "border: 2px solid red;",
       incorrect_answers: [
@@ -101,7 +101,7 @@ export const preguntasTrivial = {
     {
       id: 10,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Propiedad para alinear texto al centro?",
       correct_answer: "text-align: center;",
       incorrect_answers: [
@@ -113,7 +113,7 @@ export const preguntasTrivial = {
     {
       id: 11,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Selector para un elemento con id 'menu'?",
       correct_answer: "#menu",
       incorrect_answers: [".menu", "element['menu']", "id('menu')"],
@@ -121,7 +121,7 @@ export const preguntasTrivial = {
     {
       id: 12,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Selector para todos los párrafos <p>?",
       correct_answer: "p",
       incorrect_answers: [".p", "#p", "parrafo"],
@@ -129,7 +129,7 @@ export const preguntasTrivial = {
     {
       id: 13,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Propiedad para redondear esquinas?",
       correct_answer: "border-radius",
       incorrect_answers: ["border-round", "corner-radius", "round-corner"],
@@ -137,7 +137,7 @@ export const preguntasTrivial = {
     {
       id: 14,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Padding de 10px verticales y 5px horizontales?",
       correct_answer: "padding: 10px 5px;",
       incorrect_answers: [
@@ -149,7 +149,7 @@ export const preguntasTrivial = {
     {
       id: 15,
       category: "Interfaces",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Propiedad para imagen de fondo?",
       correct_answer: "background-image",
       incorrect_answers: ["image-background", "bg-image", "background-picture"],
@@ -183,7 +183,7 @@ export const preguntasTrivial = {
     {
       id: 19,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Cómo se oculta un elemento manteniendo su espacio?",
       correct_answer: "Sirven: visibility: hidden u opacity: 0",
       incorrect_answers: ["display: none;", "hidden: true;", "visible: false;"],
@@ -191,7 +191,7 @@ export const preguntasTrivial = {
     {
       id: 20,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Selector para estado 'hover'?",
       correct_answer: ":hover",
       incorrect_answers: [":active", ":focus", ":over"],
@@ -199,7 +199,7 @@ export const preguntasTrivial = {
     {
       id: 21,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Sintaxis correcta de box-shadow?",
       correct_answer: "box-shadow: 5px 5px 10px gray;",
       incorrect_answers: [
@@ -211,7 +211,7 @@ export const preguntasTrivial = {
     {
       id: 22,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Propiedad para convertir texto a mayúsculas?",
       correct_answer: "text-transform",
       incorrect_answers: ["font-transform", "text-case", "case-style"],
@@ -219,7 +219,7 @@ export const preguntasTrivial = {
     {
       id: 23,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Propiedad para espacio entre letras?",
       correct_answer: "letter-spacing",
       incorrect_answers: ["word-spacing", "text-spacing", "font-spacing"],
@@ -267,7 +267,7 @@ export const preguntasTrivial = {
     {
       id: 28,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Imagen de fondo sin repetirse?",
       correct_answer: "background-repeat: no-repeat;",
       incorrect_answers: [
@@ -279,7 +279,7 @@ export const preguntasTrivial = {
     {
       id: 29,
       category: "Interfaces",
-      difficulty: "medium",
+      difficulty: "hard",
       question:
         "¿Unidad relativa al tamaño de fuente del elemento raíz (html)?",
       correct_answer: "rem",
@@ -304,7 +304,7 @@ export const preguntasTrivial = {
     {
       id: 31,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Cuál es la forma correcta de declarar una variable en PHP?",
       correct_answer: "$variable = 'valor';",
       incorrect_answers: [
@@ -316,7 +316,7 @@ export const preguntasTrivial = {
     {
       id: 32,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Qué tipo de dato sería la variable $num = '25' por defecto?",
       correct_answer: "String",
       incorrect_answers: ["Integer", "Boolean", "Float"],
@@ -324,7 +324,7 @@ export const preguntasTrivial = {
     {
       id: 33,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Cuál es la función principal para mostrar texto en PHP?",
       correct_answer: "print()",
       incorrect_answers: ["console.log()", "display()", "write()"],
@@ -332,7 +332,7 @@ export const preguntasTrivial = {
     {
       id: 34,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "Para concatenar dos cadenas de texto en PHP se utiliza:",
       correct_answer: "El operador .",
       incorrect_answers: ["El signo +", "El operador &", "El operador ,"],
@@ -340,7 +340,7 @@ export const preguntasTrivial = {
     {
       id: 35,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Cuál es la forma correcta de crear un array indexado en PHP?",
       correct_answer: "Ambas: array(...) o [...]",
       incorrect_answers: ["Solo array(...)", "Solo [...]", "new Array(...)"],
@@ -348,7 +348,7 @@ export const preguntasTrivial = {
     {
       id: 36,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Cómo se accede al segundo elemento del array $frutas?",
       correct_answer: "$frutas[1]",
       incorrect_answers: ["$frutas[0]", "$frutas[2]", "$frutas[second]"],
@@ -356,7 +356,7 @@ export const preguntasTrivial = {
     {
       id: 37,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question:
         "¿Qué función se utiliza para añadir un elemento al final de un array?",
       correct_answer: "array_push()",
@@ -365,7 +365,7 @@ export const preguntasTrivial = {
     {
       id: 38,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question:
         "Para iniciar el uso de variables de sesión, ¿qué función usar?",
       correct_answer: "session_start()",
@@ -378,7 +378,7 @@ export const preguntasTrivial = {
     {
       id: 39,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Cómo se almacena un valor en una variable de sesión?",
       correct_answer: "$_SESSION['usuario'] = 'Juan';",
       incorrect_answers: [
@@ -403,7 +403,7 @@ export const preguntasTrivial = {
     {
       id: 41,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "Para destruir todos los datos registrados en una sesión:",
       correct_answer: "session_destroy()",
       incorrect_answers: [
@@ -415,7 +415,7 @@ export const preguntasTrivial = {
     {
       id: 42,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Para qué se utiliza principalmente la función setcookie()?",
       correct_answer: "Para crear o modificar una cookie en el cliente.",
       incorrect_answers: [
@@ -439,7 +439,7 @@ export const preguntasTrivial = {
     {
       id: 44,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿En qué array superglobal se almacenan las cookies recibidas?",
       correct_answer: "$_COOKIE",
       incorrect_answers: ["$_GET", "$_POST", "$_REQUEST"],
@@ -459,7 +459,7 @@ export const preguntasTrivial = {
     {
       id: 46,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Bloque para manejar excepciones?",
       correct_answer: "try...catch",
       incorrect_answers: ["if...else", "error...handle", "exception...resolve"],
@@ -475,7 +475,7 @@ export const preguntasTrivial = {
     {
       id: 48,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Método principal para obtener datos enviados por POST?",
       correct_answer: "A través de $_POST",
       incorrect_answers: [
@@ -487,7 +487,7 @@ export const preguntasTrivial = {
     {
       id: 49,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "Acceder a <input name='email'> enviado por POST:",
       correct_answer: "$_POST['email']",
       incorrect_answers: [
@@ -523,7 +523,7 @@ export const preguntasTrivial = {
     {
       id: 52,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Función para redirigir a otra página?",
       correct_answer: "header('Location: pagina.php')",
       incorrect_answers: ["redirect()", "location()", "goto()"],
@@ -531,7 +531,7 @@ export const preguntasTrivial = {
     {
       id: 53,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Forma correcta de declarar una constante?",
       correct_answer: "define('PI', 3.1416);",
       incorrect_answers: [
@@ -543,7 +543,7 @@ export const preguntasTrivial = {
     {
       id: 54,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Cómo se cuenta el número de elementos en un array?",
       correct_answer: "Ambas: count() o sizeof()",
       incorrect_answers: [
@@ -555,7 +555,7 @@ export const preguntasTrivial = {
     {
       id: 55,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Verificar si variable de sesión está definida?",
       correct_answer: "if (isset($_SESSION['id']))",
       incorrect_answers: [
@@ -567,7 +567,7 @@ export const preguntasTrivial = {
     {
       id: 56,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Cómo se elimina una sola variable de sesión?",
       correct_answer: "unset($_SESSION['usuario'])",
       incorrect_answers: [
@@ -579,7 +579,7 @@ export const preguntasTrivial = {
     {
       id: 57,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Función para enviar un correo electrónico?",
       correct_answer: "mail()",
       incorrect_answers: ["sendmail()", "email()", "smtp()"],
@@ -595,7 +595,7 @@ export const preguntasTrivial = {
     {
       id: 59,
       category: "DESARROLLO WEB EN ENTORNO SERVIDOR",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "Para recorrer un array asociativo se usa:",
       correct_answer: "Un bucle foreach.",
       incorrect_answers: [
@@ -623,7 +623,7 @@ export const preguntasTrivial = {
     {
       id: 61,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Cuántos ODS hay?",
       correct_answer: "17",
       incorrect_answers: ["15", "20"],
@@ -631,7 +631,7 @@ export const preguntasTrivial = {
     {
       id: 62,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Año horizonte Agenda 2030?",
       correct_answer: "2050",
       incorrect_answers: ["2025", "2030"],
@@ -639,7 +639,7 @@ export const preguntasTrivial = {
     {
       id: 63,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Organismo impulsor Agenda 2030?",
       correct_answer: "ONU",
       incorrect_answers: ["UE", "OTAN"],
@@ -647,7 +647,7 @@ export const preguntasTrivial = {
     {
       id: 64,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Qué NO es pilar de sostenibilidad?",
       correct_answer: "Tecnológico",
       incorrect_answers: ["Social", "Económico", "Ambiental"],
@@ -655,7 +655,7 @@ export const preguntasTrivial = {
     {
       id: 65,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿Qué es la ONU?",
       correct_answer: "Org. internacional para la paz",
       incorrect_answers: ["Agencia de noticias", "Alianza militar"],
@@ -663,7 +663,7 @@ export const preguntasTrivial = {
     {
       id: 66,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "¿ODS relacionado con el agua?",
       correct_answer: "ODS 6",
       incorrect_answers: ["ODS 1", "ODS 10"],
@@ -671,7 +671,7 @@ export const preguntasTrivial = {
     {
       id: 67,
       category: "Sostenibilidad",
-      difficulty: "easy",
+      difficulty: "hard",
       question: "Integrar ASG mejora:",
       correct_answer: "Imagen de marca",
       incorrect_answers: ["Coste financiero", "Rotación de personal"],
@@ -679,7 +679,7 @@ export const preguntasTrivial = {
     {
       id: 68,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "Definición Sostenibilidad:",
       correct_answer: "Satisfacer presente sin comprometer futuro",
       incorrect_answers: ["Crecimiento infinito", "Ahorro total"],
@@ -687,7 +687,7 @@ export const preguntasTrivial = {
     {
       id: 69,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Medida de emisiones GEI?",
       correct_answer: "Huella de carbono",
       incorrect_answers: ["Huella ecológica", "Emisión neta"],
@@ -695,7 +695,7 @@ export const preguntasTrivial = {
     {
       id: 70,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Impacto cambio climático en costes?",
       correct_answer: "Aumentan (seguros/adaptación)",
       incorrect_answers: ["Disminuyen", "Se mantienen"],
@@ -703,7 +703,7 @@ export const preguntasTrivial = {
     {
       id: 71,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Qué es descarbonización?",
       correct_answer: "Reducir emisiones CO2",
       incorrect_answers: ["Eliminar carbono comida", "Usar carbón"],
@@ -711,7 +711,7 @@ export const preguntasTrivial = {
     {
       id: 72,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Qué es desmaterialización?",
       correct_answer: "Sustituir físico por digital",
       incorrect_answers: ["Reciclar todo", "Destruir materiales"],
@@ -719,7 +719,7 @@ export const preguntasTrivial = {
     {
       id: 73,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Alianza software libre afecta a?",
       correct_answer: "Gobernanza",
       incorrect_answers: ["Social", "Ambiental"],
@@ -727,7 +727,7 @@ export const preguntasTrivial = {
     {
       id: 74,
       category: "Sostenibilidad",
-      difficulty: "medium",
+      difficulty: "hard",
       question: "¿Objetivo Pacto Verde Europeo?",
       correct_answer: "Neutralidad climática 2050",
       incorrect_answers: ["Digitalización 2030", "PIB x2"],
@@ -4789,7 +4789,7 @@ export const preguntasTrivial = {
         "Elimina la necesidad de comentarios.",
         "Permite usar solo variables globales.",
       ],
-    }, // <--- AQUÍ FALTABA ESTA LLAVE Y ESTA COMA
+    },
     {
       id: 526,
       category: "Python",
@@ -5640,5 +5640,5 @@ export const preguntasTrivial = {
         "Optimizar peticiones HTTP",
       ],
     },
-  ], // Cierra el array 'results'
-}; // Cierra el objeto principal 'window.preguntasTrivial'
+  ], 
+}; 
